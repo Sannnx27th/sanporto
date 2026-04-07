@@ -1,0 +1,36 @@
+<div class="hero-flex">
+    <div class="hero-text">
+        <span class="hi-icon">Contact</span>
+        <h1>Get In Touch</h1>
+        <p class="sub-title">Let's work together or just say hi!</p>
+
+        <form id="contact-form" style="margin-top: 25px;">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <input type="text" id="name" placeholder="Nama Lengkap" class="form-input">
+                <span class="error-msg" id="name-error"></span>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <input type="text" id="email" placeholder="Email (Contoh: ihsan@mail.com)" class="form-input">
+                <span class="error-msg" id="email-error"></span>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <textarea id="message" placeholder="Pesan kamu..." class="form-input" rows="4"></textarea>
+                <span class="error-msg" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn-see-more" style="width: 100%; border: none;">Kirim Pesan</button>
+            
+            <div id="success-toast" style="display:none; background: #28a745; color: white; padding: 12px; border-radius: 8px; margin-top: 15px; text-align: center; font-size: 14px;">
+                <i class="fas fa-check-circle"></i> Pesan kamu berhasil terkirim!
+            </div>
+        </form>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-frame" style="background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+             <i class="fas fa-paper-plane fa-5x" style="color: #C8B9A6;"></i>
+        </div>
+    </div>
+</div>
