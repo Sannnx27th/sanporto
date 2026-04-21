@@ -48,9 +48,6 @@ function loadPage(pageName) {
         }
     });
 
-    // --- 4. FITUR UTS: LOCAL STORAGE (PENYIMPANAN PERSISTEN) ---
-    
-    // Fungsi untuk mengisi form dari data yang tersimpan
     function loadSavedFormData() {
         const savedData = localStorage.getItem('contactFormData');
         if (savedData) {

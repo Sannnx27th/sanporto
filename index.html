@@ -208,6 +208,38 @@
             margin-top: 4px;
             display: block;
         }
+        /* --- CSS SKILL SECTION --- */
+        .skill-container { width: 100%; max-width: 800px; }
+        .skill-category { margin-bottom: 30px; }
+        .skill-category h3 { font-size: 18px; color: #111; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        
+        .skill-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-badge { 
+            background: #111; color: #fff; padding: 8px 16px; 
+            border-radius: 20px; font-size: 13px; font-weight: 500;
+            transition: 0.3s;
+        }
+        .skill-badge:hover { background: #007BFF; transform: translateY(-3px); }
+
+        /* --- CSS PORTFOLIO SECTION --- */
+        .portfolio-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; width: 100%; max-width: 900px; margin-top: 20px;
+        }
+        .portfolio-card { 
+            background: #fff; border-radius: 15px; overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s;
+        }
+        .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        
+        .portfolio-img { width: 100%; height: 180px; background: #ddd; object-fit: cover; }
+        .portfolio-info { padding: 20px; }
+        .portfolio-info h3 { font-size: 18px; margin-bottom: 8px; color: #111; }
+        .portfolio-info p { font-size: 14px; color: #666; line-height: 1.5; margin-bottom: 15px; }
+        
+        .tech-stack { display: flex; gap: 8px; flex-wrap: wrap; }
+        .tech-item { font-size: 11px; font-weight: 600; color: #007BFF; background: rgba(0,123,255,0.1); padding: 4px 10px; border-radius: 10px; }
 /* --- RESPONSIVE UNTUK HP (Mobile Optimized) --- */
         @media (max-width: 480px) {
             header { 
@@ -288,6 +320,7 @@
                 <li><a href="#" data-page="home">Home</a></li>
                 <li><a href="#" data-page="about">About</a></li>
                 <li><a href="#" data-page="experience">Experience</a></li>
+                <li><a href="#" data-page="skill">Skill</a></li>
                 <li><a href="#" data-page="contact">Contact</a></li>
             </ul>
         </nav>
